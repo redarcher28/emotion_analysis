@@ -66,4 +66,4 @@ graph.set_series_opts(
 )
 
 # 渲染图表
-graph.render("emotion_cooccurrence_network_all_weights.html")
+graph.render("index.html")

@@ -5,13 +5,16 @@
     <title>Awesome-pyecharts</title>
                 <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
 
+    
 </head>
 <body >
-    <div id="e7ce55774c0c42d8ace03e4d9ab89b1e" class="chart-container" style="width:900px; height:500px; "></div>
+    <style>.box { justify-content:center; display:flex; flex-wrap:wrap;  } </style>
+    <div class="box">
+                <div id="629a6ca203c74497bf840d7ab1839346" class="chart-container" style="width:1000px; height:800px; "></div>
     <script>
-        var chart_e7ce55774c0c42d8ace03e4d9ab89b1e = echarts.init(
-            document.getElementById('e7ce55774c0c42d8ace03e4d9ab89b1e'), 'white', {renderer: 'canvas'});
-        var option_e7ce55774c0c42d8ace03e4d9ab89b1e = {
+        var chart_629a6ca203c74497bf840d7ab1839346 = echarts.init(
+            document.getElementById('629a6ca203c74497bf840d7ab1839346'), 'white', {renderer: 'canvas'});
+        var option_629a6ca203c74497bf840d7ab1839346 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -70,85 +73,65 @@
                     "name": "\u793e\u4f1a\u8bae\u9898",
                     "symbolSize": 30,
                     "itemStyle": {
-                        "color": "skyblue"
-                    }
+                        "color": "blue"
+                    },
+                    "symbol": "circle"
                 },
                 {
                     "name": "\u6559\u80b2\u8bdd\u9898",
                     "symbolSize": 30,
                     "itemStyle": {
-                        "color": "skyblue"
-                    }
+                        "color": "blue"
+                    },
+                    "symbol": "circle"
                 },
                 {
                     "name": "\u7279\u5b9a\u4eba\u7269\u53ca\u76f8\u5173\u65b9",
                     "symbolSize": 30,
                     "itemStyle": {
-                        "color": "skyblue"
-                    }
+                        "color": "blue"
+                    },
+                    "symbol": "circle"
                 },
                 {
                     "name": "\u5176\u4ed6\u793e\u4f1a\u6210\u5458",
                     "symbolSize": 30,
                     "itemStyle": {
-                        "color": "skyblue"
-                    }
-                },
-                {
-                    "name": "\u56de\u5e94",
-                    "symbolSize": 30,
-                    "itemStyle": {
-                        "color": "skyblue"
-                    }
-                },
-                {
-                    "name": "\u8d28\u7591\u58f0",
-                    "symbolSize": 30,
-                    "itemStyle": {
-                        "color": "skyblue"
-                    }
-                },
-                {
-                    "name": "\u652f\u6301\u58f0",
-                    "symbolSize": 30,
-                    "itemStyle": {
-                        "color": "skyblue"
-                    }
+                        "color": "blue"
+                    },
+                    "symbol": "circle"
                 },
                 {
                     "name": "\u5a31\u4e50\u5316\u8ba8\u8bba",
                     "symbolSize": 50,
                     "itemStyle": {
                         "color": "orange"
-                    }
+                    },
+                    "symbol": "diamond"
                 },
                 {
                     "name": "\u7406\u6027\u8ba8\u8bba",
                     "symbolSize": 50,
                     "itemStyle": {
                         "color": "orange"
-                    }
+                    },
+                    "symbol": "diamond"
                 },
                 {
                     "name": "\u652f\u6301",
                     "symbolSize": 50,
                     "itemStyle": {
                         "color": "orange"
-                    }
-                },
-                {
-                    "name": "\u53cd\u5bf9",
-                    "symbolSize": 50,
-                    "itemStyle": {
-                        "color": "orange"
-                    }
+                    },
+                    "symbol": "diamond"
                 },
                 {
                     "name": "\u8d28\u7591",
                     "symbolSize": 50,
                     "itemStyle": {
                         "color": "orange"
-                    }
+                    },
+                    "symbol": "diamond"
                 }
             ],
             "edgeLabel": {
@@ -162,32 +145,16 @@
             "edgeSymbolSize": 10,
             "links": [
                 {
-                    "source": "\u53cd\u5bf9",
+                    "source": "\u5a31\u4e50\u5316\u8ba8\u8bba",
                     "target": "\u5176\u4ed6\u793e\u4f1a\u6210\u5458",
-                    "value": 2,
+                    "value": 3,
                     "lineStyle": {
-                        "width": 2
-                    }
-                },
-                {
-                    "source": "\u53cd\u5bf9",
-                    "target": "\u6559\u80b2\u8bdd\u9898",
-                    "value": 12,
-                    "lineStyle": {
-                        "width": 12
-                    }
-                },
-                {
-                    "source": "\u53cd\u5bf9",
-                    "target": "\u7279\u5b9a\u4eba\u7269\u53ca\u76f8\u5173\u65b9",
-                    "value": 9,
-                    "lineStyle": {
-                        "width": 9
+                        "width": 3
                     }
                 },
                 {
                     "source": "\u5a31\u4e50\u5316\u8ba8\u8bba",
-                    "target": "\u5176\u4ed6\u793e\u4f1a\u6210\u5458",
+                    "target": "\u6559\u80b2\u8bdd\u9898",
                     "value": 4,
                     "lineStyle": {
                         "width": 4
@@ -195,31 +162,15 @@
                 },
                 {
                     "source": "\u5a31\u4e50\u5316\u8ba8\u8bba",
-                    "target": "\u6559\u80b2\u8bdd\u9898",
-                    "value": 7,
+                    "target": "\u7279\u5b9a\u4eba\u7269\u53ca\u76f8\u5173\u65b9",
+                    "value": 27,
                     "lineStyle": {
-                        "width": 7
+                        "width": 10
                     }
                 },
                 {
                     "source": "\u5a31\u4e50\u5316\u8ba8\u8bba",
-                    "target": "\u7279\u5b9a\u4eba\u7269\u53ca\u76f8\u5173\u65b9",
-                    "value": 5,
-                    "lineStyle": {
-                        "width": 5
-                    }
-                },
-                {
-                    "source": "\u652f\u6301",
-                    "target": "\u5176\u4ed6\u793e\u4f1a\u6210\u5458",
-                    "value": 5,
-                    "lineStyle": {
-                        "width": 5
-                    }
-                },
-                {
-                    "source": "\u652f\u6301",
-                    "target": "\u56de\u5e94",
+                    "target": "\u793e\u4f1a\u8bae\u9898",
                     "value": 2,
                     "lineStyle": {
                         "width": 2
@@ -227,94 +178,78 @@
                 },
                 {
                     "source": "\u652f\u6301",
-                    "target": "\u652f\u6301\u58f0",
-                    "value": 2,
-                    "lineStyle": {
-                        "width": 2
-                    }
-                },
-                {
-                    "source": "\u652f\u6301",
-                    "target": "\u6559\u80b2\u8bdd\u9898",
-                    "value": 66,
-                    "lineStyle": {
-                        "width": 66
-                    }
-                },
-                {
-                    "source": "\u652f\u6301",
-                    "target": "\u7279\u5b9a\u4eba\u7269\u53ca\u76f8\u5173\u65b9",
-                    "value": 47,
-                    "lineStyle": {
-                        "width": 47
-                    }
-                },
-                {
-                    "source": "\u652f\u6301",
-                    "target": "\u8d28\u7591\u58f0",
-                    "value": 3,
-                    "lineStyle": {
-                        "width": 3
-                    }
-                },
-                {
-                    "source": "\u7406\u6027\u8ba8\u8bba",
                     "target": "\u5176\u4ed6\u793e\u4f1a\u6210\u5458",
-                    "value": 3,
-                    "lineStyle": {
-                        "width": 3
-                    }
-                },
-                {
-                    "source": "\u7406\u6027\u8ba8\u8bba",
-                    "target": "\u6559\u80b2\u8bdd\u9898",
-                    "value": 18,
-                    "lineStyle": {
-                        "width": 18
-                    }
-                },
-                {
-                    "source": "\u7406\u6027\u8ba8\u8bba",
-                    "target": "\u7279\u5b9a\u4eba\u7269\u53ca\u76f8\u5173\u65b9",
                     "value": 14,
                     "lineStyle": {
-                        "width": 14
+                        "width": 10
                     }
                 },
                 {
-                    "source": "\u8d28\u7591",
-                    "target": "\u5176\u4ed6\u793e\u4f1a\u6210\u5458",
+                    "source": "\u652f\u6301",
+                    "target": "\u6559\u80b2\u8bdd\u9898",
+                    "value": 22,
+                    "lineStyle": {
+                        "width": 10
+                    }
+                },
+                {
+                    "source": "\u652f\u6301",
+                    "target": "\u7279\u5b9a\u4eba\u7269\u53ca\u76f8\u5173\u65b9",
+                    "value": 82,
+                    "lineStyle": {
+                        "width": 10
+                    }
+                },
+                {
+                    "source": "\u652f\u6301",
+                    "target": "\u793e\u4f1a\u8bae\u9898",
                     "value": 6,
                     "lineStyle": {
                         "width": 6
                     }
                 },
                 {
-                    "source": "\u8d28\u7591",
-                    "target": "\u652f\u6301\u58f0",
+                    "source": "\u672a\u5206\u7c7b",
+                    "target": "\u5176\u4ed6\u793e\u4f1a\u6210\u5458",
+                    "value": 2,
+                    "lineStyle": {
+                        "width": 2
+                    }
+                },
+                {
+                    "source": "\u672a\u5206\u7c7b",
+                    "target": "\u5a31\u4e50\u5316\u8ba8\u8bba",
                     "value": 1,
                     "lineStyle": {
                         "width": 1
                     }
                 },
                 {
-                    "source": "\u8d28\u7591",
+                    "source": "\u672a\u5206\u7c7b",
+                    "target": "\u652f\u6301",
+                    "value": 1,
+                    "lineStyle": {
+                        "width": 1
+                    }
+                },
+                {
+                    "source": "\u672a\u5206\u7c7b",
                     "target": "\u6559\u80b2\u8bdd\u9898",
-                    "value": 26,
+                    "value": 11,
                     "lineStyle": {
-                        "width": 26
+                        "width": 10
                     }
                 },
                 {
-                    "source": "\u8d28\u7591",
+                    "source": "\u672a\u5206\u7c7b",
                     "target": "\u7279\u5b9a\u4eba\u7269\u53ca\u76f8\u5173\u65b9",
-                    "value": 22,
+                    "value": 70,
                     "lineStyle": {
-                        "width": 22
+                        "width": 10
                     }
                 },
                 {
-                    "source": "\u8d28\u7591",
+                    "source": "\u672a\u5206\u7c7b",
                     "target": "\u793e\u4f1a\u8bae\u9898",
                     "value": 1,
                     "lineStyle": {
@@ -322,11 +257,35 @@
                     }
                 },
                 {
-                    "source": "\u8d28\u7591",
-                    "target": "\u8d28\u7591\u58f0",
-                    "value": 3,
+                    "source": "\u7406\u6027\u8ba8\u8bba",
+                    "target": "\u7279\u5b9a\u4eba\u7269\u53ca\u76f8\u5173\u65b9",
+                    "value": 6,
                     "lineStyle": {
-                        "width": 3
+                        "width": 6
+                    }
+                },
+                {
+                    "source": "\u8d28\u7591",
+                    "target": "\u5176\u4ed6\u793e\u4f1a\u6210\u5458",
+                    "value": 5,
+                    "lineStyle": {
+                        "width": 5
+                    }
+                },
+                {
+                    "source": "\u8d28\u7591",
+                    "target": "\u6559\u80b2\u8bdd\u9898",
+                    "value": 14,
+                    "lineStyle": {
+                        "width": 10
+                    }
+                },
+                {
+                    "source": "\u8d28\u7591",
+                    "target": "\u7279\u5b9a\u4eba\u7269\u53ca\u76f8\u5173\u65b9",
+                    "value": 25,
+                    "lineStyle": {
+                        "width": 10
                     }
                 }
             ],
@@ -407,7 +366,88 @@
         }
     ]
 };
-        chart_e7ce55774c0c42d8ace03e4d9ab89b1e.setOption(option_e7ce55774c0c42d8ace03e4d9ab89b1e);
+        chart_629a6ca203c74497bf840d7ab1839346.setOption(option_629a6ca203c74497bf840d7ab1839346);
+    </script>
+<br/>                        <style>
+            .fl-table {
+                margin: 20px;
+                border-radius: 5px;
+                font-size: 12px;
+                border: none;
+                border-collapse: collapse;
+                max-width: 100%;
+                white-space: nowrap;
+                word-break: keep-all;
+            }
+
+            .fl-table th {
+                text-align: left;
+                font-size: 20px;
+            }
+
+            .fl-table tr {
+                display: table-row;
+                vertical-align: inherit;
+                border-color: inherit;
+            }
+
+            .fl-table tr:hover td {
+                background: #00d1b2;
+                color: #F8F8F8;
+            }
+
+            .fl-table td, .fl-table th {
+                border-style: none;
+                border-top: 1px solid #dbdbdb;
+                border-left: 1px solid #dbdbdb;
+                border-bottom: 3px solid #dbdbdb;
+                border-right: 1px solid #dbdbdb;
+                padding: .5em .55em;
+                font-size: 15px;
+            }
+
+            .fl-table td {
+                border-style: none;
+                font-size: 15px;
+                vertical-align: center;
+                border-bottom: 1px solid #dbdbdb;
+                border-left: 1px solid #dbdbdb;
+                border-right: 1px solid #dbdbdb;
+                height: 30px;
+            }
+
+            .fl-table tr:nth-child(even) {
+                background: #F8F8F8;
+            }
+        </style>
+        <div id="c836f7ec0ba94154bb0e90e1a2fe6b87" class="chart-container" style="">
+            <p class="title" style="font-size: 18px; font-weight:bold;" > 颜色和形状标注</p>
+            <p class="subtitle" style="font-size: 12px;" > </p>
+            <table class="fl-table">
+    <thead>
+        <tr>
+            <th>颜色</th>
+            <th>属性</th>
+            <th>形状</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>黄色</td>
+            <td>行为属性</td>
+            <td>圆形</td>
+        </tr>
+        <tr>
+            <td>蓝色</td>
+            <td>主题属性</td>
+            <td>矩形</td>
+        </tr>
+    </tbody>
+</table>
+        </div>
+
+<br/>    </div>
+    <script>
     </script>
 </body>
 </html>

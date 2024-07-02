@@ -64,8 +64,8 @@ included_nodes = set(edges_agg['Source']).union(set(edges_agg['Target']))
 filtered_nodes_df = nodes_df[nodes_df['Id'].isin(included_nodes)]
 
 # 保存为CSV文件
-filtered_nodes_df.to_csv('filtered_nodes_final.csv', index=False)
-edges_agg.to_csv('filtered_edges_final.csv', index=False)
+filtered_nodes_df.to_csv('outcome/filtered_nodes_评论.csv', index=False)
+edges_agg.to_csv('outcome/filtered_edges_评论.csv', index=False)
 
 # 显示生成的DataFrame
 filtered_nodes_df.head(), edges_agg.head()

@@ -1,7 +1,7 @@
 import pandas as pd
 
 # 加载新的数据
-new_data_file = '多所高校互动姜萍_带行为属性_合并.xlsx'
+new_data_file = 'Professor_Welcome_Jiang_Ping.xlsx'
 df_new = pd.read_excel(new_data_file)
 
 # 合并主题属性和行为属性的关键词
@@ -64,6 +64,6 @@ included_nodes = set(edges_agg['Source']).union(set(edges_agg['Target']))
 filtered_nodes_df = nodes_df[nodes_df['Id'].isin(included_nodes)]
 
 # 保存为CSV文件
-filtered_nodes_df.to_csv('outcome/filtered_nodes_高校.csv', index=False)
-edges_agg.to_csv('outcome/filtered_edges_高校.csv', index=False)
+filtered_nodes_df.to_csv('outcome/filtered_nodes_教授欢迎.csv', index=False)
+edges_agg.to_csv('outcome/filtered_edges_教授欢迎.csv', index=False)
 

@@ -5,8 +5,8 @@ from pyecharts.globals import ThemeType
 import pandas as pd
 
 # 加载节点和边数据
-nodes_file = 'outcome/filtered_nodes_高校.csv'
-edges_file = 'outcome/filtered_edges_高校.csv'
+nodes_file = 'outcome/filtered_nodes_教授欢迎.csv'
+edges_file = 'outcome/filtered_edges_教授欢迎.csv'
 
 nodes_df = pd.read_csv(nodes_file)
 edges_df = pd.read_csv(edges_file)
@@ -79,8 +79,8 @@ table = Table()
 # 添加表格内容
 headers = ["颜色", "属性", "形状"]
 rows = [
-    ["黄色", "行为属性", "圆形"],
-    ["蓝色", "主题属性", "矩形"]
+    ["黄色", "行为属性", "菱形"],
+    ["蓝色", "主题属性", "圆形"]
 ]
 table.add(headers, rows).set_global_opts(
     title_opts=opts.ComponentTitleOpts(title="颜色和形状标注")
